@@ -33,10 +33,16 @@ use Psr\Http\Message\RequestInterface;
  * @method \GuzzleHttp\Promise\Promise createMultipartUploadAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteBucket(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteBucketAsync(array $args = [])
+ * @method \ILAB_Aws\Result deleteBucketAnalyticsConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteBucketAnalyticsConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteBucketCors(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteBucketCorsAsync(array $args = [])
+ * @method \ILAB_Aws\Result deleteBucketInventoryConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteBucketInventoryConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteBucketLifecycle(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteBucketLifecycleAsync(array $args = [])
+ * @method \ILAB_Aws\Result deleteBucketMetricsConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteBucketMetricsConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteBucketPolicy(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteBucketPolicyAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteBucketReplication(array $args = [])
@@ -47,14 +53,20 @@ use Psr\Http\Message\RequestInterface;
  * @method \GuzzleHttp\Promise\Promise deleteBucketWebsiteAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteObject(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteObjectAsync(array $args = [])
+ * @method \ILAB_Aws\Result deleteObjectTagging(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteObjectTaggingAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteObjects(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteObjectsAsync(array $args = [])
  * @method \ILAB_Aws\Result getBucketAccelerateConfiguration(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getBucketAccelerateConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result getBucketAcl(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getBucketAclAsync(array $args = [])
+ * @method \ILAB_Aws\Result getBucketAnalyticsConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getBucketAnalyticsConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result getBucketCors(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getBucketCorsAsync(array $args = [])
+ * @method \ILAB_Aws\Result getBucketInventoryConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getBucketInventoryConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result getBucketLifecycle(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getBucketLifecycleAsync(array $args = [])
  * @method \ILAB_Aws\Result getBucketLifecycleConfiguration(array $args = [])
@@ -63,6 +75,8 @@ use Psr\Http\Message\RequestInterface;
  * @method \GuzzleHttp\Promise\Promise getBucketLocationAsync(array $args = [])
  * @method \ILAB_Aws\Result getBucketLogging(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getBucketLoggingAsync(array $args = [])
+ * @method \ILAB_Aws\Result getBucketMetricsConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getBucketMetricsConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result getBucketNotification(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getBucketNotificationAsync(array $args = [])
  * @method \ILAB_Aws\Result getBucketNotificationConfiguration(array $args = [])
@@ -83,12 +97,20 @@ use Psr\Http\Message\RequestInterface;
  * @method \GuzzleHttp\Promise\Promise getObjectAsync(array $args = [])
  * @method \ILAB_Aws\Result getObjectAcl(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getObjectAclAsync(array $args = [])
+ * @method \ILAB_Aws\Result getObjectTagging(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getObjectTaggingAsync(array $args = [])
  * @method \ILAB_Aws\Result getObjectTorrent(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getObjectTorrentAsync(array $args = [])
  * @method \ILAB_Aws\Result headBucket(array $args = [])
  * @method \GuzzleHttp\Promise\Promise headBucketAsync(array $args = [])
  * @method \ILAB_Aws\Result headObject(array $args = [])
  * @method \GuzzleHttp\Promise\Promise headObjectAsync(array $args = [])
+ * @method \ILAB_Aws\Result listBucketAnalyticsConfigurations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listBucketAnalyticsConfigurationsAsync(array $args = [])
+ * @method \ILAB_Aws\Result listBucketInventoryConfigurations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listBucketInventoryConfigurationsAsync(array $args = [])
+ * @method \ILAB_Aws\Result listBucketMetricsConfigurations(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listBucketMetricsConfigurationsAsync(array $args = [])
  * @method \ILAB_Aws\Result listBuckets(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listBucketsAsync(array $args = [])
  * @method \ILAB_Aws\Result listMultipartUploads(array $args = [])
@@ -105,14 +127,20 @@ use Psr\Http\Message\RequestInterface;
  * @method \GuzzleHttp\Promise\Promise putBucketAccelerateConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result putBucketAcl(array $args = [])
  * @method \GuzzleHttp\Promise\Promise putBucketAclAsync(array $args = [])
+ * @method \ILAB_Aws\Result putBucketAnalyticsConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putBucketAnalyticsConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result putBucketCors(array $args = [])
  * @method \GuzzleHttp\Promise\Promise putBucketCorsAsync(array $args = [])
+ * @method \ILAB_Aws\Result putBucketInventoryConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putBucketInventoryConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result putBucketLifecycle(array $args = [])
  * @method \GuzzleHttp\Promise\Promise putBucketLifecycleAsync(array $args = [])
  * @method \ILAB_Aws\Result putBucketLifecycleConfiguration(array $args = [])
  * @method \GuzzleHttp\Promise\Promise putBucketLifecycleConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result putBucketLogging(array $args = [])
  * @method \GuzzleHttp\Promise\Promise putBucketLoggingAsync(array $args = [])
+ * @method \ILAB_Aws\Result putBucketMetricsConfiguration(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putBucketMetricsConfigurationAsync(array $args = [])
  * @method \ILAB_Aws\Result putBucketNotification(array $args = [])
  * @method \GuzzleHttp\Promise\Promise putBucketNotificationAsync(array $args = [])
  * @method \ILAB_Aws\Result putBucketNotificationConfiguration(array $args = [])
@@ -133,6 +161,8 @@ use Psr\Http\Message\RequestInterface;
  * @method \GuzzleHttp\Promise\Promise putObjectAsync(array $args = [])
  * @method \ILAB_Aws\Result putObjectAcl(array $args = [])
  * @method \GuzzleHttp\Promise\Promise putObjectAclAsync(array $args = [])
+ * @method \ILAB_Aws\Result putObjectTagging(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putObjectTaggingAsync(array $args = [])
  * @method \ILAB_Aws\Result restoreObject(array $args = [])
  * @method \GuzzleHttp\Promise\Promise restoreObjectAsync(array $args = [])
  * @method \ILAB_Aws\Result uploadPart(array $args = [])
@@ -170,6 +200,15 @@ class S3Client extends AwsClient implements S3ClientInterface
                     . ' be accessed via an Accelerate endpoint.',
                 'default' => false,
             ],
+            'use_dual_stack_endpoint' => [
+                'type' => 'config',
+                'valid' => ['bool'],
+                'doc' => 'Set to true to send requests to an S3 Dual Stack'
+                    . ' endpoint by default, which enables IPv6 Protocol.'
+                    . ' Can be enabled or disabled on individual operations by setting'
+                    . ' \'@use_dual_stack_endpoint\' to true or false.',
+                'default' => false,
+            ],
         ];
     }
 
@@ -191,6 +230,11 @@ class S3Client extends AwsClient implements S3ClientInterface
      *   individual operations by setting '@use_accelerate_endpoint' to true or
      *   false. Note: you must enable S3 Accelerate on a bucket before it can be
      *   accessed via an Accelerate endpoint.
+     * - use_dual_stack_endpoint: (bool) Set to true to send requests to an S3
+     *   Dual Stack endpoint by default, which enables IPv6 Protocol.
+     *   Can be enabled or disabled on individual operations by setting
+     *   '@use_dual_stack_endpoint\' to true or false. Note:
+     *   you cannot use it together with an accelerate endpoint.
      *
      * @param array $args
      */
@@ -204,9 +248,16 @@ class S3Client extends AwsClient implements S3ClientInterface
             Middleware::contentType(['PutObject', 'UploadPart']),
             's3.content_type'
         );
+
         $stack->appendBuild(
-            AccelerateMiddleware::wrap($this->getConfig('use_accelerate_endpoint')),
-            's3.use_accelerate_endpoint'
+            S3EndpointMiddleware::wrap(
+                $this->getRegion(),
+                [
+                    'dual_stack' => $this->getConfig('use_dual_stack_endpoint'),
+                    'accelerate' => $this->getConfig('use_accelerate_endpoint')
+                ]
+            ),
+            's3.endpoint_middleware'
         );
 
         // Use the bucket style middleware when using a "bucket_endpoint" (for cnames)
@@ -395,9 +446,9 @@ class S3Client extends AwsClient implements S3ClientInterface
                             }
                             foreach ($nested as $steps) {
                                 if (isset($result[$steps[0]])) {
-                                    foreach ($result[$steps[0]] as &$part) {
+                                    foreach ($result[$steps[0]] as $key => $part) {
                                         if (isset($part[$steps[1]])) {
-                                            $part[$steps[1]]
+                                            $result[$steps[0]][$key][$steps[1]]
                                                 = urldecode($part[$steps[1]]);
                                         }
                                     }

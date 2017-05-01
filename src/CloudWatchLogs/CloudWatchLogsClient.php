@@ -42,6 +42,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise filterLogEventsAsync(array $args = [])
  * @method \ILAB_Aws\Result getLogEvents(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getLogEventsAsync(array $args = [])
+ * @method \ILAB_Aws\Result listTagsLogGroup(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listTagsLogGroupAsync(array $args = [])
  * @method \ILAB_Aws\Result putDestination(array $args = [])
  * @method \GuzzleHttp\Promise\Promise putDestinationAsync(array $args = [])
  * @method \ILAB_Aws\Result putDestinationPolicy(array $args = [])
@@ -54,7 +56,11 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise putRetentionPolicyAsync(array $args = [])
  * @method \ILAB_Aws\Result putSubscriptionFilter(array $args = [])
  * @method \GuzzleHttp\Promise\Promise putSubscriptionFilterAsync(array $args = [])
+ * @method \ILAB_Aws\Result tagLogGroup(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise tagLogGroupAsync(array $args = [])
  * @method \ILAB_Aws\Result testMetricFilter(array $args = [])
  * @method \GuzzleHttp\Promise\Promise testMetricFilterAsync(array $args = [])
+ * @method \ILAB_Aws\Result untagLogGroup(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise untagLogGroupAsync(array $args = [])
  */
 class CloudWatchLogsClient extends AwsClient {}

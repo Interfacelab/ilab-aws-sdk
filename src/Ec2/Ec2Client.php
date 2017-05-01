@@ -5,6 +5,7 @@ use ILAB_Aws\AwsClient;
 use ILAB_Aws\Api\Service;
 use ILAB_Aws\Api\DocModel;
 use ILAB_Aws\Api\ApiProvider;
+use ILAB_Aws\PresignUrlMiddleware;
 
 /**
  * Client used to interact with Amazon EC2.
@@ -417,10 +418,54 @@ use ILAB_Aws\Api\ApiProvider;
  * @method \GuzzleHttp\Promise\Promise unassignPrivateIpAddressesAsync(array $args = [])
  * @method \ILAB_Aws\Result unmonitorInstances(array $args = [])
  * @method \GuzzleHttp\Promise\Promise unmonitorInstancesAsync(array $args = [])
- * @method \ILAB_Aws\Result describeIdentityIdFormat(array $args = []) (supported in versions 2016-04-01)
- * @method \GuzzleHttp\Promise\Promise describeIdentityIdFormatAsync(array $args = []) (supported in versions 2016-04-01)
- * @method \ILAB_Aws\Result modifyIdentityIdFormat(array $args = []) (supported in versions 2016-04-01)
- * @method \GuzzleHttp\Promise\Promise modifyIdentityIdFormatAsync(array $args = []) (supported in versions 2016-04-01)
+ * @method \ILAB_Aws\Result describeHostReservationOfferings(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise describeHostReservationOfferingsAsync(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \ILAB_Aws\Result describeHostReservations(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise describeHostReservationsAsync(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \ILAB_Aws\Result describeIdentityIdFormat(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise describeIdentityIdFormatAsync(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \ILAB_Aws\Result getHostReservationPurchasePreview(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise getHostReservationPurchasePreviewAsync(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \ILAB_Aws\Result modifyIdentityIdFormat(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise modifyIdentityIdFormatAsync(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \ILAB_Aws\Result purchaseHostReservation(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise purchaseHostReservationAsync(array $args = []) (supported in versions 2016-04-01, 2016-09-15, 2016-11-15)
+ * @method \ILAB_Aws\Result acceptReservedInstancesExchangeQuote(array $args = []) (supported in versions 2016-09-15, 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise acceptReservedInstancesExchangeQuoteAsync(array $args = []) (supported in versions 2016-09-15, 2016-11-15)
+ * @method \ILAB_Aws\Result getReservedInstancesExchangeQuote(array $args = []) (supported in versions 2016-09-15, 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise getReservedInstancesExchangeQuoteAsync(array $args = []) (supported in versions 2016-09-15, 2016-11-15)
+ * @method \ILAB_Aws\Result assignIpv6Addresses(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise assignIpv6AddressesAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result associateIamInstanceProfile(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise associateIamInstanceProfileAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result associateSubnetCidrBlock(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise associateSubnetCidrBlockAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result associateVpcCidrBlock(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise associateVpcCidrBlockAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result createEgressOnlyInternetGateway(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise createEgressOnlyInternetGatewayAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result createFpgaImage(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise createFpgaImageAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result deleteEgressOnlyInternetGateway(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise deleteEgressOnlyInternetGatewayAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result describeEgressOnlyInternetGateways(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise describeEgressOnlyInternetGatewaysAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result describeIamInstanceProfileAssociations(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise describeIamInstanceProfileAssociationsAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result describeVolumesModifications(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise describeVolumesModificationsAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result disassociateIamInstanceProfile(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise disassociateIamInstanceProfileAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result disassociateSubnetCidrBlock(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise disassociateSubnetCidrBlockAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result disassociateVpcCidrBlock(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise disassociateVpcCidrBlockAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result modifyVolume(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise modifyVolumeAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result replaceIamInstanceProfileAssociation(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise replaceIamInstanceProfileAssociationAsync(array $args = []) (supported in versions 2016-11-15)
+ * @method \ILAB_Aws\Result unassignIpv6Addresses(array $args = []) (supported in versions 2016-11-15)
+ * @method \GuzzleHttp\Promise\Promise unassignIpv6AddressesAsync(array $args = []) (supported in versions 2016-11-15)
  */
 class Ec2Client extends AwsClient
 {
@@ -428,9 +473,16 @@ class Ec2Client extends AwsClient
     {
         $args['with_resolved'] = function (array $args) {
             $this->getHandlerList()->appendInit(
-                CopySnapshotMiddleware::wrap(
+                PresignUrlMiddleware::wrap(
                     $this,
-                    $args['endpoint_provider']
+                    $args['endpoint_provider'],
+                    [
+                        'operations' => [
+                            'CopySnapshot',
+                        ],
+                        'service' => 'ec2',
+                        'presign_param' => 'PresignedUrl',
+                    ]
                 ),
                 'ec2.copy_snapshot'
             );

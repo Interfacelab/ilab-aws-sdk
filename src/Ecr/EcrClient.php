@@ -20,6 +20,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise deleteRepositoryAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteRepositoryPolicy(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteRepositoryPolicyAsync(array $args = [])
+ * @method \ILAB_Aws\Result describeImages(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeImagesAsync(array $args = [])
  * @method \ILAB_Aws\Result describeRepositories(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeRepositoriesAsync(array $args = [])
  * @method \ILAB_Aws\Result getAuthorizationToken(array $args = [])

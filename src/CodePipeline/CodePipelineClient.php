@@ -26,6 +26,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise getJobDetailsAsync(array $args = [])
  * @method \ILAB_Aws\Result getPipeline(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getPipelineAsync(array $args = [])
+ * @method \ILAB_Aws\Result getPipelineExecution(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getPipelineExecutionAsync(array $args = [])
  * @method \ILAB_Aws\Result getPipelineState(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getPipelineStateAsync(array $args = [])
  * @method \ILAB_Aws\Result getThirdPartyJobDetails(array $args = [])

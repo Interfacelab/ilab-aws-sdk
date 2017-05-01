@@ -14,6 +14,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise describeCertificateAsync(array $args = [])
  * @method \ILAB_Aws\Result getCertificate(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getCertificateAsync(array $args = [])
+ * @method \ILAB_Aws\Result importCertificate(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise importCertificateAsync(array $args = [])
  * @method \ILAB_Aws\Result listCertificates(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listCertificatesAsync(array $args = [])
  * @method \ILAB_Aws\Result listTagsForCertificate(array $args = [])

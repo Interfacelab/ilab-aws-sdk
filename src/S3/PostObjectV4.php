@@ -4,7 +4,6 @@ namespace ILAB_Aws\S3;
 use ILAB_Aws\Credentials\CredentialsInterface;
 use GuzzleHttp\Psr7\Uri;
 use ILAB_Aws\Signature\SignatureTrait;
-use ILAB_Aws\Common\Enum\DateFormat;
 use ILAB_Aws\Signature\SignatureV4 as SignatureV4;
 use ILAB_Aws\Api\TimestampShape as TimestampShape;
 
@@ -22,7 +21,6 @@ class PostObjectV4
     private $bucket;
     private $formAttributes;
     private $formInputs;
-    private $jsonPolicy;
 
     /**
      * Constructs the PostObject.
@@ -36,7 +34,7 @@ class PostObjectV4
      *                                      fields.
      * @param array             $options    Policy condition options
      * @param mixed             $expiration Upload expiration time value. By
-     *                                      default: 1 hour vaild peroid.
+     *                                      default: 1 hour valid period.
      */
     public function __construct(
         S3ClientInterface $client,
@@ -55,6 +53,13 @@ class PostObjectV4
             'enctype' => 'multipart/form-data'
         ];
 
+        $credentials   = $this->client->getCredentials()->wait();
+
+        if ($securityToken = $credentials->getSecurityToken()) {
+            array_push($options, ['x-amz-security-token' => $securityToken]);
+            $formInputs['X-Amz-Security-Token'] = $securityToken;
+        }
+
         // setup basic policy
         $policy = [
             'expiration' => TimestampShape::format($expiration, 'iso8601'),
@@ -65,7 +70,7 @@ class PostObjectV4
         $this->formInputs = $formInputs + ['key' => '${filename}'];
 
         // finalize policy and signature
-        $credentials = $this->client->getCredentials()->wait();
+
         $this->formInputs += $this->getPolicyAndSignature(
             $credentials,
             $policy
@@ -142,10 +147,12 @@ class PostObjectV4
             && strpos($this->bucket, '.') !== false
         ) {
             // Use path-style URLs
-            $uri = $uri->withPath($this->bucket);
+            $uri = $uri->withPath("/{$this->bucket}");
         } else {
-            // Use virtual-style URLs
-            $uri = $uri->withHost($this->bucket . '.' . $uri->getHost());
+            // Use virtual-style URLs if haven't been set up already
+            if (strpos($uri->getHost(), $this->bucket . '.') !== 0) {
+                $uri = $uri->withHost($this->bucket . '.' . $uri->getHost());
+            }
         }
 
         return (string) $uri;

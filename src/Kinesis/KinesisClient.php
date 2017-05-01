@@ -14,6 +14,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise decreaseStreamRetentionPeriodAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteStream(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteStreamAsync(array $args = [])
+ * @method \ILAB_Aws\Result describeLimits(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeLimitsAsync(array $args = [])
  * @method \ILAB_Aws\Result describeStream(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeStreamAsync(array $args = [])
  * @method \ILAB_Aws\Result disableEnhancedMonitoring(array $args = [])
@@ -40,5 +42,7 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise removeTagsFromStreamAsync(array $args = [])
  * @method \ILAB_Aws\Result splitShard(array $args = [])
  * @method \GuzzleHttp\Promise\Promise splitShardAsync(array $args = [])
+ * @method \ILAB_Aws\Result updateShardCount(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise updateShardCountAsync(array $args = [])
  */
 class KinesisClient extends AwsClient {}

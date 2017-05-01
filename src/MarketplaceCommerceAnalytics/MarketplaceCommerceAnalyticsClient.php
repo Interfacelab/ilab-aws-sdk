@@ -8,5 +8,7 @@ use ILAB_Aws\AwsClient;
  *
  * @method \ILAB_Aws\Result generateDataSet(array $args = [])
  * @method \GuzzleHttp\Promise\Promise generateDataSetAsync(array $args = [])
+ * @method \ILAB_Aws\Result startSupportDataExport(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise startSupportDataExportAsync(array $args = [])
  */
 class MarketplaceCommerceAnalyticsClient extends AwsClient {}

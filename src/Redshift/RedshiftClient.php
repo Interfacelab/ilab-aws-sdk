@@ -102,6 +102,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise enableLoggingAsync(array $args = [])
  * @method \ILAB_Aws\Result enableSnapshotCopy(array $args = [])
  * @method \GuzzleHttp\Promise\Promise enableSnapshotCopyAsync(array $args = [])
+ * @method \ILAB_Aws\Result getClusterCredentials(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getClusterCredentialsAsync(array $args = [])
  * @method \ILAB_Aws\Result modifyCluster(array $args = [])
  * @method \GuzzleHttp\Promise\Promise modifyClusterAsync(array $args = [])
  * @method \ILAB_Aws\Result modifyClusterIamRoles(array $args = [])

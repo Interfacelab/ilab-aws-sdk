@@ -21,8 +21,6 @@ use ILAB_Aws\RetryMiddleware;
  * @method \GuzzleHttp\Promise\Promise deleteItemAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteTable(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteTableAsync(array $args = [])
- * @method \ILAB_Aws\Result describeLimits(array $args = [])
- * @method \GuzzleHttp\Promise\Promise describeLimitsAsync(array $args = [])
  * @method \ILAB_Aws\Result describeTable(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeTableAsync(array $args = [])
  * @method \ILAB_Aws\Result getItem(array $args = [])
@@ -39,6 +37,18 @@ use ILAB_Aws\RetryMiddleware;
  * @method \GuzzleHttp\Promise\Promise updateItemAsync(array $args = [])
  * @method \ILAB_Aws\Result updateTable(array $args = [])
  * @method \GuzzleHttp\Promise\Promise updateTableAsync(array $args = [])
+ * @method \ILAB_Aws\Result describeLimits(array $args = []) (supported in versions 2012-08-10)
+ * @method \GuzzleHttp\Promise\Promise describeLimitsAsync(array $args = []) (supported in versions 2012-08-10)
+ * @method \ILAB_Aws\Result describeTimeToLive(array $args = []) (supported in versions 2012-08-10)
+ * @method \GuzzleHttp\Promise\Promise describeTimeToLiveAsync(array $args = []) (supported in versions 2012-08-10)
+ * @method \ILAB_Aws\Result listTagsOfResource(array $args = []) (supported in versions 2012-08-10)
+ * @method \GuzzleHttp\Promise\Promise listTagsOfResourceAsync(array $args = []) (supported in versions 2012-08-10)
+ * @method \ILAB_Aws\Result tagResource(array $args = []) (supported in versions 2012-08-10)
+ * @method \GuzzleHttp\Promise\Promise tagResourceAsync(array $args = []) (supported in versions 2012-08-10)
+ * @method \ILAB_Aws\Result untagResource(array $args = []) (supported in versions 2012-08-10)
+ * @method \GuzzleHttp\Promise\Promise untagResourceAsync(array $args = []) (supported in versions 2012-08-10)
+ * @method \ILAB_Aws\Result updateTimeToLive(array $args = []) (supported in versions 2012-08-10)
+ * @method \GuzzleHttp\Promise\Promise updateTimeToLiveAsync(array $args = []) (supported in versions 2012-08-10)
  */
 class DynamoDbClient extends AwsClient
 {

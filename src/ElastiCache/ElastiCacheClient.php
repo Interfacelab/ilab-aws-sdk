@@ -82,5 +82,7 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise resetCacheParameterGroupAsync(array $args = [])
  * @method \ILAB_Aws\Result revokeCacheSecurityGroupIngress(array $args = [])
  * @method \GuzzleHttp\Promise\Promise revokeCacheSecurityGroupIngressAsync(array $args = [])
+ * @method \ILAB_Aws\Result testFailover(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise testFailoverAsync(array $args = [])
  */
 class ElastiCacheClient extends AwsClient {}
