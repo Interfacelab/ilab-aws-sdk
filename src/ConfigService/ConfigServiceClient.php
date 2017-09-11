@@ -40,6 +40,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise getComplianceSummaryByConfigRuleAsync(array $args = [])
  * @method \ILAB_Aws\Result getComplianceSummaryByResourceType(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getComplianceSummaryByResourceTypeAsync(array $args = [])
+ * @method \ILAB_Aws\Result getDiscoveredResourceCounts(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getDiscoveredResourceCountsAsync(array $args = [])
  * @method \ILAB_Aws\Result getResourceConfigHistory(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getResourceConfigHistoryAsync(array $args = [])
  * @method \ILAB_Aws\Result listDiscoveredResources(array $args = [])

@@ -34,6 +34,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise describeResourceGroupsAsync(array $args = [])
  * @method \ILAB_Aws\Result describeRulesPackages(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeRulesPackagesAsync(array $args = [])
+ * @method \ILAB_Aws\Result getAssessmentReport(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getAssessmentReportAsync(array $args = [])
  * @method \ILAB_Aws\Result getTelemetryMetadata(array $args = [])
  * @method \GuzzleHttp\Promise\Promise getTelemetryMetadataAsync(array $args = [])
  * @method \ILAB_Aws\Result listAssessmentRunAgents(array $args = [])

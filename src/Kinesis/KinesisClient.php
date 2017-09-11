@@ -42,6 +42,10 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise removeTagsFromStreamAsync(array $args = [])
  * @method \ILAB_Aws\Result splitShard(array $args = [])
  * @method \GuzzleHttp\Promise\Promise splitShardAsync(array $args = [])
+ * @method \ILAB_Aws\Result startStreamEncryption(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise startStreamEncryptionAsync(array $args = [])
+ * @method \ILAB_Aws\Result stopStreamEncryption(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise stopStreamEncryptionAsync(array $args = [])
  * @method \ILAB_Aws\Result updateShardCount(array $args = [])
  * @method \GuzzleHttp\Promise\Promise updateShardCountAsync(array $args = [])
  */

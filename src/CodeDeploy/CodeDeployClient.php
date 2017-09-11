@@ -64,6 +64,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise listDeploymentInstancesAsync(array $args = [])
  * @method \ILAB_Aws\Result listDeployments(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listDeploymentsAsync(array $args = [])
+ * @method \ILAB_Aws\Result listGitHubAccountTokenNames(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listGitHubAccountTokenNamesAsync(array $args = [])
  * @method \ILAB_Aws\Result listOnPremisesInstances(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listOnPremisesInstancesAsync(array $args = [])
  * @method \ILAB_Aws\Result registerApplicationRevision(array $args = [])

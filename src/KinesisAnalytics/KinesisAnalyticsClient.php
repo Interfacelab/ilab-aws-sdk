@@ -5,6 +5,8 @@ use ILAB_Aws\AwsClient;
 
 /**
  * This client is used to interact with the **Amazon Kinesis Analytics** service.
+ * @method \ILAB_Aws\Result addApplicationCloudWatchLoggingOption(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise addApplicationCloudWatchLoggingOptionAsync(array $args = [])
  * @method \ILAB_Aws\Result addApplicationInput(array $args = [])
  * @method \GuzzleHttp\Promise\Promise addApplicationInputAsync(array $args = [])
  * @method \ILAB_Aws\Result addApplicationOutput(array $args = [])
@@ -15,6 +17,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise createApplicationAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteApplication(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteApplicationAsync(array $args = [])
+ * @method \ILAB_Aws\Result deleteApplicationCloudWatchLoggingOption(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise deleteApplicationCloudWatchLoggingOptionAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteApplicationOutput(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteApplicationOutputAsync(array $args = [])
  * @method \ILAB_Aws\Result deleteApplicationReferenceDataSource(array $args = [])

@@ -1,6 +1,9 @@
 <?php
 namespace ILAB_Aws\Ses;
 
+use ILAB_Aws\Api\ApiProvider;
+use ILAB_Aws\Api\DocModel;
+use ILAB_Aws\Api\Service;
 use ILAB_Aws\Credentials\CredentialsInterface;
 
 /**
@@ -126,5 +129,21 @@ class SesClient extends \ILAB_Aws\AwsClient
         $signature = hash_hmac($algo, $message, $creds->getSecretKey(), true);
 
         return base64_encode($version . $signature);
+    }
+
+    /**
+     * @internal
+     * @codeCoverageIgnore
+     */
+    public static function applyDocFilters(array $api, array $docs)
+    {
+        $b64 = '<div class="alert alert-info">This value will be base64 encoded on your behalf.</div>';
+
+        $docs['shapes']['RawMessage']['append'] = $b64;
+
+        return [
+            new Service($api, ApiProvider::defaultProvider()),
+            new DocModel($docs)
+        ];
     }
 }

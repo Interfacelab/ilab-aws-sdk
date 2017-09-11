@@ -184,6 +184,10 @@ use ILAB_Aws\PresignUrlMiddleware;
  * @method \GuzzleHttp\Promise\Promise restoreDBClusterFromSnapshotAsync(array $args = []) (supported in versions 2014-10-31)
  * @method \ILAB_Aws\Result restoreDBClusterToPointInTime(array $args = []) (supported in versions 2014-10-31)
  * @method \GuzzleHttp\Promise\Promise restoreDBClusterToPointInTimeAsync(array $args = []) (supported in versions 2014-10-31)
+ * @method \ILAB_Aws\Result startDBInstance(array $args = []) (supported in versions 2014-10-31)
+ * @method \GuzzleHttp\Promise\Promise startDBInstanceAsync(array $args = []) (supported in versions 2014-10-31)
+ * @method \ILAB_Aws\Result stopDBInstance(array $args = []) (supported in versions 2014-10-31)
+ * @method \GuzzleHttp\Promise\Promise stopDBInstanceAsync(array $args = []) (supported in versions 2014-10-31)
  */
 class RdsClient extends AwsClient
 {

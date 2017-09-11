@@ -28,6 +28,13 @@
             "2016-12-01": "2016-12-01"
         }
     },
+    "athena": {
+        "namespace": "Athena",
+        "versions": {
+            "latest": "2017-05-18",
+            "2017-05-18": "2017-05-18"
+        }
+    },
     "autoscaling": {
         "namespace": "AutoScaling",
         "versions": {
@@ -86,6 +93,13 @@
         "versions": {
             "latest": "2014-05-30",
             "2014-05-30": "2014-05-30"
+        }
+    },
+    "cloudhsmv2": {
+        "namespace": "CloudHSMV2",
+        "versions": {
+            "latest": "2017-04-28",
+            "2017-04-28": "2017-04-28"
         }
     },
     "cloudsearch": {
@@ -191,6 +205,13 @@
         "versions": {
             "latest": "2012-10-29",
             "2012-10-29": "2012-10-29"
+        }
+    },
+    "dax": {
+        "namespace": "DAX",
+        "versions": {
+            "latest": "2017-04-19",
+            "2017-04-19": "2017-04-19"
         }
     },
     "devicefarm": {
@@ -317,6 +338,13 @@
             "2010-12-01": "2010-12-01"
         }
     },
+    "entitlement.marketplace": {
+        "namespace": "MarketplaceEntitlementService",
+        "versions": {
+            "latest": "2017-01-11",
+            "2017-01-11": "2017-01-11"
+        }
+    },
     "es": {
         "namespace": "ElasticsearchService",
         "versions": {
@@ -351,6 +379,20 @@
         "versions": {
             "latest": "2012-06-01",
             "2012-06-01": "2012-06-01"
+        }
+    },
+    "glue": {
+        "namespace": "Glue",
+        "versions": {
+            "latest": "2017-03-31",
+            "2017-03-31": "2017-03-31"
+        }
+    },
+    "greengrass": {
+        "namespace": "Greengrass",
+        "versions": {
+            "latest": "2017-06-07",
+            "2017-06-07": "2017-06-07"
         }
     },
     "health": {
@@ -457,6 +499,20 @@
         "versions": {
             "latest": "2016-01-14",
             "2016-01-14": "2016-01-14"
+        }
+    },
+    "mgh": {
+        "namespace": "MigrationHub",
+        "versions": {
+            "latest": "2017-05-31",
+            "2017-05-31": "2017-05-31"
+        }
+    },
+    "mobile": {
+        "namespace": "Mobile",
+        "versions": {
+            "latest": "2017-07-01",
+            "2017-07-01": "2017-07-01"
         }
     },
     "monitoring": {

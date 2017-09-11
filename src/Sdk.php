@@ -14,6 +14,8 @@ namespace ILAB_Aws;
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionApplicationDiscoveryService(array $args = [])
  * @method \ILAB_Aws\Appstream\AppstreamClient createAppstream(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionAppstream(array $args = [])
+ * @method \ILAB_Aws\Athena\AthenaClient createAthena(array $args = [])
+ * @method \ILAB_Aws\MultiRegionClient createMultiRegionAthena(array $args = [])
  * @method \ILAB_Aws\AutoScaling\AutoScalingClient createAutoScaling(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionAutoScaling(array $args = [])
  * @method \ILAB_Aws\Batch\BatchClient createBatch(array $args = [])
@@ -26,6 +28,8 @@ namespace ILAB_Aws;
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionCloudFormation(array $args = [])
  * @method \ILAB_Aws\CloudFront\CloudFrontClient createCloudFront(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionCloudFront(array $args = [])
+ * @method \ILAB_Aws\CloudHSMV2\CloudHSMV2Client createCloudHSMV2(array $args = [])
+ * @method \ILAB_Aws\MultiRegionClient createMultiRegionCloudHSMV2(array $args = [])
  * @method \ILAB_Aws\CloudHsm\CloudHsmClient createCloudHsm(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionCloudHsm(array $args = [])
  * @method \ILAB_Aws\CloudSearch\CloudSearchClient createCloudSearch(array $args = [])
@@ -60,6 +64,8 @@ namespace ILAB_Aws;
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionConfigService(array $args = [])
  * @method \ILAB_Aws\CostandUsageReportService\CostandUsageReportServiceClient createCostandUsageReportService(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionCostandUsageReportService(array $args = [])
+ * @method \ILAB_Aws\DAX\DAXClient createDAX(array $args = [])
+ * @method \ILAB_Aws\MultiRegionClient createMultiRegionDAX(array $args = [])
  * @method \ILAB_Aws\DataPipeline\DataPipelineClient createDataPipeline(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionDataPipeline(array $args = [])
  * @method \ILAB_Aws\DatabaseMigrationService\DatabaseMigrationServiceClient createDatabaseMigrationService(array $args = [])
@@ -102,6 +108,10 @@ namespace ILAB_Aws;
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionGameLift(array $args = [])
  * @method \ILAB_Aws\Glacier\GlacierClient createGlacier(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionGlacier(array $args = [])
+ * @method \ILAB_Aws\Glue\GlueClient createGlue(array $args = [])
+ * @method \ILAB_Aws\MultiRegionClient createMultiRegionGlue(array $args = [])
+ * @method \ILAB_Aws\Greengrass\GreengrassClient createGreengrass(array $args = [])
+ * @method \ILAB_Aws\MultiRegionClient createMultiRegionGreengrass(array $args = [])
  * @method \ILAB_Aws\Health\HealthClient createHealth(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionHealth(array $args = [])
  * @method \ILAB_Aws\Iam\IamClient createIam(array $args = [])
@@ -134,8 +144,14 @@ namespace ILAB_Aws;
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionMachineLearning(array $args = [])
  * @method \ILAB_Aws\MarketplaceCommerceAnalytics\MarketplaceCommerceAnalyticsClient createMarketplaceCommerceAnalytics(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionMarketplaceCommerceAnalytics(array $args = [])
+ * @method \ILAB_Aws\MarketplaceEntitlementService\MarketplaceEntitlementServiceClient createMarketplaceEntitlementService(array $args = [])
+ * @method \ILAB_Aws\MultiRegionClient createMultiRegionMarketplaceEntitlementService(array $args = [])
  * @method \ILAB_Aws\MarketplaceMetering\MarketplaceMeteringClient createMarketplaceMetering(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionMarketplaceMetering(array $args = [])
+ * @method \ILAB_Aws\MigrationHub\MigrationHubClient createMigrationHub(array $args = [])
+ * @method \ILAB_Aws\MultiRegionClient createMultiRegionMigrationHub(array $args = [])
+ * @method \ILAB_Aws\Mobile\MobileClient createMobile(array $args = [])
+ * @method \ILAB_Aws\MultiRegionClient createMultiRegionMobile(array $args = [])
  * @method \ILAB_Aws\OpsWorks\OpsWorksClient createOpsWorks(array $args = [])
  * @method \ILAB_Aws\MultiRegionClient createMultiRegionOpsWorks(array $args = [])
  * @method \ILAB_Aws\OpsWorksCM\OpsWorksCMClient createOpsWorksCM(array $args = [])
@@ -199,7 +215,7 @@ namespace ILAB_Aws;
  */
 class Sdk
 {
-    const VERSION = '3.26.5';
+    const VERSION = '3.36.4';
 
     /** @var array Arguments for creating clients */
     private $args;

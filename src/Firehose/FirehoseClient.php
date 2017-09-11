@@ -12,6 +12,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise deleteDeliveryStreamAsync(array $args = [])
  * @method \ILAB_Aws\Result describeDeliveryStream(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeDeliveryStreamAsync(array $args = [])
+ * @method \ILAB_Aws\Result getKinesisStream(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise getKinesisStreamAsync(array $args = [])
  * @method \ILAB_Aws\Result listDeliveryStreams(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listDeliveryStreamsAsync(array $args = [])
  * @method \ILAB_Aws\Result putRecord(array $args = [])

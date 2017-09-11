@@ -87,6 +87,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise openInstancePublicPortsAsync(array $args = [])
  * @method \ILAB_Aws\Result peerVpc(array $args = [])
  * @method \GuzzleHttp\Promise\Promise peerVpcAsync(array $args = [])
+ * @method \ILAB_Aws\Result putInstancePublicPorts(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise putInstancePublicPortsAsync(array $args = [])
  * @method \ILAB_Aws\Result rebootInstance(array $args = [])
  * @method \GuzzleHttp\Promise\Promise rebootInstanceAsync(array $args = [])
  * @method \ILAB_Aws\Result releaseStaticIp(array $args = [])

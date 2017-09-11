@@ -5,6 +5,8 @@ use ILAB_Aws\AwsClient;
 
 /**
  * This client is used to interact with the **AWS CodeBuild** service.
+ * @method \ILAB_Aws\Result batchDeleteBuilds(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise batchDeleteBuildsAsync(array $args = [])
  * @method \ILAB_Aws\Result batchGetBuilds(array $args = [])
  * @method \GuzzleHttp\Promise\Promise batchGetBuildsAsync(array $args = [])
  * @method \ILAB_Aws\Result batchGetProjects(array $args = [])

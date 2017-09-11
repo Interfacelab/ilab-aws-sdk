@@ -32,6 +32,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise deleteLoadBalancerPolicyAsync(array $args = [])
  * @method \ILAB_Aws\Result deregisterInstancesFromLoadBalancer(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deregisterInstancesFromLoadBalancerAsync(array $args = [])
+ * @method \ILAB_Aws\Result describeAccountLimits(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise describeAccountLimitsAsync(array $args = [])
  * @method \ILAB_Aws\Result describeInstanceHealth(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeInstanceHealthAsync(array $args = [])
  * @method \ILAB_Aws\Result describeLoadBalancerAttributes(array $args = [])

@@ -34,6 +34,8 @@ use ILAB_Aws\AwsClient;
  * @method \GuzzleHttp\Promise\Promise getThirdPartyJobDetailsAsync(array $args = [])
  * @method \ILAB_Aws\Result listActionTypes(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listActionTypesAsync(array $args = [])
+ * @method \ILAB_Aws\Result listPipelineExecutions(array $args = [])
+ * @method \GuzzleHttp\Promise\Promise listPipelineExecutionsAsync(array $args = [])
  * @method \ILAB_Aws\Result listPipelines(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listPipelinesAsync(array $args = [])
  * @method \ILAB_Aws\Result pollForJobs(array $args = [])
